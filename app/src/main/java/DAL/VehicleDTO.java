@@ -13,7 +13,7 @@ public class VehicleDTO implements Serializable, IVehicleDTO {
   }
 
   @Override
-  public void setVehicleID(int VehicleID) {
+  public void setVehicleId(int VehicleId) {
     this.vehicleId = vehicleId;
   }
 

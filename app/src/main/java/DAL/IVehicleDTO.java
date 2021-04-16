@@ -2,7 +2,7 @@ package DAL;
 
 public interface IVehicleDTO {
   int getVehicleId();
-  void setVehicleID(int VehicleID);
+  void setVehicleId(int VehicleId);
 
   int getLicense();
   void setLicense(int License);

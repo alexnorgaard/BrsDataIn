@@ -3,18 +3,18 @@ package DAL;
 import java.io.Serializable;
 
 public class PersonDTO implements Serializable, IPersonDTO {
-    private int userID, phoneNum, maNum;
+    private int userId, phoneNum, maNum;
     private String firstName, lastName, rank, email, password;
 
 
     @Override
     public int getUserId() {
-        return userID;
+        return userId;
     }
 
     @Override
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     @Override

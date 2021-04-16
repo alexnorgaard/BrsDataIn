@@ -2,7 +2,7 @@ package DAL;
 
 public interface IPersonDTO {
     int getUserId();
-    void setUserID(int userID);
+    void setUserId(int userId);
 
     int getMANum();
     void setMANum(int MANum);
