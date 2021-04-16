@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class VehicleDTO implements Serializable, IVehicleDTO {
   private int vehicleId, license;
-  private String vehicleType, vehiclePurpose, userResponsible;
+  private String vehicleType, vehiclePurpose, unitResponsible;
 
 
   @Override
@@ -48,12 +48,12 @@ public class VehicleDTO implements Serializable, IVehicleDTO {
   }
 
   @Override
-  public String getUserResponsible() {
-    return userResponsible;
+  public String getUnitResponsible() {
+    return unitResponsible;
   }
 
   @Override
-  public void setUserResponsible(String UserResponsible) {
-    this.userResponsible = userResponsible;
+  public void setUnitResponsible(String UnitResponsible) {
+    this.unitResponsible = unitResponsible;
   }
 }

@@ -13,6 +13,6 @@ public interface IVehicleDTO {
   String getVehiclePurpose();
   void setVehiclePurpose(String VehiclePurpose);
 
-  String getUserResponsible();
-  void setUserResponsible(String UserResponsible);
+  String getUnitResponsible();
+  void setUnitResponsible(String UnitResponsible);
 }

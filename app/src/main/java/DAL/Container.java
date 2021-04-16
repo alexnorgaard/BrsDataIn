@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Container implements Serializable, IContainerDTO {
   private int containerId, license;
-  private String containerType, userResponsible;
+  private String containerType, unitResponsible;
 
   @Override
   public int getContainerId() {
@@ -37,12 +37,12 @@ public class Container implements Serializable, IContainerDTO {
   }
 
   @Override
-  public String getUserResponsible() {
-    return userResponsible;
+  public String getUnitResponsible() {
+    return unitResponsible;
   }
 
   @Override
-  public void setUserResponsible(String UserResponsible) {
-    this.userResponsible = userResponsible;
+  public void setUnitResponsible(String UnitResponsible) {
+    this.unitResponsible = unitResponsible;
   }
 }

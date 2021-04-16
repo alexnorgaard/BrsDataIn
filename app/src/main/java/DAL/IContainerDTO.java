@@ -10,6 +10,6 @@ public interface IContainerDTO {
   String getContainerType();
   void setContainerType(String ContainerType);
 
-  String getUserResponsible();
-  void setUserResponsible(String UserResponsible);
+  String getUnitResponsible();
+  void setUnitResponsible(String UnitResponsible);
 }
