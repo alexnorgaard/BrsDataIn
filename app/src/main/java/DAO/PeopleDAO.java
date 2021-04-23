@@ -9,8 +9,7 @@ import java.util.LinkedList;
 
 public class PeopleDAO implements IPeopleDAO {
   private Connection createConnection() throws SQLException {
-    return DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s160068?"
-            + "user=s160068&password=D8meeg0vOUC5OjertVLZV"); //Ikke den rigtige connection URL. HUSK AT FIX!!!
+    return DriverManager.getConnection("130.225.170.83");
   }
 
 
