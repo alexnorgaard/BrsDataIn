@@ -11,5 +11,7 @@ public interface IPeopleDAO {
 
     public class DALException extends Exception{
 
+      public DALException(String id_already_in_use) {
+      }
     }
 }
