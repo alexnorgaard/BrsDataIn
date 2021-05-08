@@ -1,10 +1,7 @@
 package DAO;
 
 import DAL.IVehicleControlDTO;
-import DAL.IVehicleDTO;
 import DAL.VehicleControlDTO;
-import DAL.VehicleDTO;
-
 import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -45,7 +45,6 @@ public class VehicleDAO implements IVehicleDAO {
   public IVehicleDTO getVehicle(int vehicleId) throws DALException {
     IVehicleDTO vehicle = new VehicleDTO();
 
-
     try (Connection c = createConnection()){
 
       Statement st = c.createStatement();
