@@ -11,5 +11,7 @@ public interface IContainerDAO {
 
   public class DALException extends Exception{
 
+    public DALException(String message) {
+    }
   }
 }
