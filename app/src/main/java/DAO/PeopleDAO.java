@@ -2,7 +2,6 @@ package DAO;
 
 import DAL.IPersonDTO;
 import DAL.PersonDTO;
-
 import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;

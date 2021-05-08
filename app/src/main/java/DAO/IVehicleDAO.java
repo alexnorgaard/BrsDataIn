@@ -11,5 +11,7 @@ public interface IVehicleDAO {
 
   public class DALException extends Exception{
 
+    public DALException(String id_already_in_use) {
+    }
   }
 }
