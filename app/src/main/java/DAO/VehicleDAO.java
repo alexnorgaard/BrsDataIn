@@ -1,8 +1,6 @@
 package DAO;
 
-import DAL.IPersonDTO;
 import DAL.IVehicleDTO;
-import DAL.PersonDTO;
 import DAL.VehicleDTO;
 
 import java.sql.*;
@@ -29,13 +27,13 @@ public class VehicleDAO implements IVehicleDAO {
         throw  new IVehicleDAO.DALException("ID already in use");
       }
 
-      PreparedStatement prepState = c.prepareStatement("INSERT INTO vehicles VALUES (?,?,?,?)");
+      PreparedStatement prepState = c.prepareStatement("INSERT INTO vehicles VALUES (?,?,?,?,?)");
 
-
-      prepState.setInt(1,vehicle.getLicense());
-      prepState.setString(2,vehicle.getVehicleType());
-      prepState.setString(3,vehicle.getVehiclePurpose());
-      prepState.setString(4,vehicle.getUnitResponsible());
+      prepState.setInt(1,vehicle.getVehicleId());
+      prepState.setInt(2,vehicle.getLicense());
+      prepState.setString(3,vehicle.getVehicleType());
+      prepState.setString(4,vehicle.getVehiclePurpose());
+      prepState.setString(5,vehicle.getUnitResponsible());
       prepState.executeUpdate();
 
     } catch (SQLException e) {
