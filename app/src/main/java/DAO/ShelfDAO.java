@@ -71,8 +71,8 @@ public class ShelfDAO implements IShelfDAO {
       st.setString(1,shelf.getShelfName());
       st.setInt(2,shelf.getCompartmentId());
       st.setInt(3,shelf.getVehicleId());
-      st.setInt(3,shelf.getContainerId());
-      st.setInt(4,shelf.getShelfId());
+      st.setInt(4,shelf.getContainerId());
+      st.setInt(5,shelf.getShelfId());
       st.executeUpdate();
 
     } catch (SQLException e) {
