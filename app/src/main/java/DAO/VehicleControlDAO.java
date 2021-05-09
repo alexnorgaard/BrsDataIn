@@ -11,7 +11,7 @@ import java.util.LinkedList;
 public class VehicleControlDAO implements IVehicleControlDAO {
 
   private Connection createConnection() throws SQLException {
-    return DriverManager.getConnection("130.225.170.83");
+    return DriverManager.getConnection("jdbc:mariadb://130.225.170.83:3306/db?user=soren&password=password");
   }
 
   @Override

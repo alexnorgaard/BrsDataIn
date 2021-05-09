@@ -14,7 +14,7 @@ import DAL.VehicleControlDTO;
 public class ContainerDAO implements IContainerDAO{
 
   private Connection createConnection() throws SQLException {
-    return DriverManager.getConnection("130.225.170.83");
+    return DriverManager.getConnection("jdbc:mariadb://130.225.170.83:3306/db?user=soren&password=password");
   }
 
   @Override

@@ -7,14 +7,12 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 
 import DAL.IItemDTO;
-import DAL.IShelfDTO;
 import DAL.ItemDTO;
-import DAL.ShelfDTO;
 
 public class ItemDAO implements IItemDAO{
 
   private Connection createConnection() throws SQLException {
-    return DriverManager.getConnection("130.225.170.83");
+    return DriverManager.getConnection("jdbc:mariadb://130.225.170.83:3306/db?user=soren&password=password");
   }
 
   @Override
